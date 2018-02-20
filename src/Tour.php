@@ -15,15 +15,11 @@ final class Tour
     public static function byNumber(int $number): Tour
     {
         static $tours;
-        $tours = $tours ?: [
-            1 => new Tour(1),
-            2 => new Tour(2),
-            3 => new Tour(3),
-            4 => new Tour(4),
-            5 => new Tour(5),
-            6 => new Tour(6),
-            7 => new Tour(7),
-        ];
+        if (empty($tours)) {
+            foreach (range(1, 7) as $n) {
+                $tours[$n] = new Tour($n);
+            }
+        }
         if (isset($tours[$number])) {
             return $tours[$number];
         }
