@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Mzgb\Rules;
 
-class Score
+final class Score
 {
     private $points = [];
 
