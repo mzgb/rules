@@ -1,6 +1,6 @@
 {
-  "name": "mzgb/game",
-  "description": "The Game Rules",
+  "name": "mzgb/rules",
+  "description": "The Rules",
   "type": "library",
   "license": "MIT",
   "authors": [
