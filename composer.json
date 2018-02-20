@@ -1,0 +1,22 @@
+{
+  "name": "mzgb/game",
+  "description": "The Game Rules",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alexey Karapetov",
+      "email": "karapetov@gmail.com"
+    }
+  ],
+  "require": {
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mzgb\\Rules\\": "src/"
+    }
+  }
+}
